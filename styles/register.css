@@ -1,0 +1,243 @@
+/* Estilizando conteiner */
+#cabecalho {
+    width: 100%;
+    background-color: #f7f7f5;
+    text-align: center;
+}
+
+#cabecalho h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 35px;
+}
+
+#cabecalho span {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 30px;
+
+    color: #5c5c5c;
+}
+
+#cabecalho span a {
+    color: #B02121;
+    text-decoration: none;
+}
+
+#cabecalho span a:hover {
+    text-decoration: underline;
+}
+
+#conteiner-form {
+    width: 33%;
+    
+    margin: 50px auto;
+}
+
+#conteiner-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#conteiner-form form label {
+    width: 30%;
+    padding: 20px 0 5px 0;
+    font-size: 14px;
+    color: #5e5d5d;
+}
+
+#conteiner-form form input {
+    border-radius: 10px;
+    border: 1px solid #acabab;
+    padding: 17px;
+    transition: border 300ms ;
+}
+
+#conteiner-form form input:hover {
+    border: 1px solid #B02121;
+}
+
+#conteiner-form form input:focus {
+    border: 1px solid #B02121;
+    outline: none;
+    box-shadow: 2px 2px 2px #00000042;
+}
+
+#conteiner-form form input::placeholder {
+    font-size: 13px;
+    color: #858585bb;
+}
+
+#conteiner-form form #btn-register {
+    background-color: #B02121;
+    border: none;
+    color: #fff;
+    justify-self: end;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 30px 0 70px 0;
+
+    transition: background-color 300ms ;
+    cursor: pointer;
+}
+
+#conteiner-form form #btn-register:hover {
+    background-color: rgb(199, 35, 35);
+}
+
+#conteiner-form form .showSenha {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    border: none;
+    font-size: 13px;
+    padding: 3px;
+    color: #8a8a8a;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+#conteiner-form form .showSenha:hover{
+    color: #030303;
+}
+
+#conteiner-form form .showSenha i {
+    padding: 1px 2px;
+    font-size: 16px;
+}
+
+#conteiner-form form .box-senha {
+    width: 100%;
+    position: relative;
+}
+
+#conteiner-form form .box-senha input {
+    width: 100%;
+}
+
+#conteiner-form form .box-senha a {
+    display: flex;
+}
+
+#cabecalho {
+    visibility: hidden;
+}
+
+#conteiner-form {
+    visibility: hidden;
+}
+
+/* Estilando o Footer das paginas */
+
+.footer {
+    background: #333;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    gap: 90px;
+}
+
+/* Logo do rodapé */
+.footer #logo_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+.footer #logo_footer img {
+    width: 119px;
+    height: 119px;
+}
+
+.footer span {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* sobre a Melhem */
+.footer #sobre_melhem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #sobre_melhem h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #sobre_melhem span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Localização */
+.footer #localizacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #localizacao h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #localizacao span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Contattos */
+.footer #contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #contatos h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #contatos h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer #contatos span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Segue a gente */
+.footer #segue_gente {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #segue_gente h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Estilização do texto de invalides */
+.invalid {
+    font-size: 12px;
+    color: #B02121;
+    padding-top: 3px;
+}

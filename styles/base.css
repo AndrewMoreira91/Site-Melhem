@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    font-family: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.linha {
+    width: 100%;
+    border-bottom: 1px solid #0000002c;
+}
+ 
+/* Estilando o Header */
+#header {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(173, 173, 173);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px 0px;
+
+    z-index: 1;
+}
+
+#logo img {
+    width: 180px;
+}
+
+.navegação a {
+    color: #5d5d5d;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.20869rem; /* 147.222% */
+    text-decoration-line: none;
+
+    padding: 3px 5px;
+    transition: all 200ms ;
+}
+
+.navegação a:hover {
+    background-color: #212E61;
+    color: #fff;
+    border-radius: 3px;
+    
+}
+
+.btn_login {
+    background: #FFF;
+    color: #000;
+
+    border-radius: 2px;
+    border: 0.5px solid #00000093;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    border: 1.5px solid #212E61;
+    background-color: #fdfdfd;
+}
+
+.btn_login i {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+ /* Estilos para o menu dropdown */
+ .menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-dropdown:hover .submenu {
+    display: block;
+}
+
+/* Estilos para os itens do submenu */
+.menu-dropdown .submenu li {
+    padding: 10px;
+}
+
+.menu-dropdown .submenu li a {
+    text-decoration: none;
+    display: block;
+}
+
+.menu-dropdown .submenu li:hover {
+    background-color: #212E61;
+    
+}
+.menu-dropdown .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* Remove o marcador de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+#menu-dropdown-login {
+    position: relative;
+    display: inline-block;
+}
+
+#menu-dropdown-login #submenu-login {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 6px 6px 15px #000000a2;
+}
+
+#menu-dropdown-login:hover #submenu-login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30PX;
+    gap: 10px;
+
+}
+
+#menu-dropdown-login #submenu-login ul {
+    background-color: #fff;
+}
+
+#menu-dropdown-login #submenu-login li {
+    display: inline;
+    list-style: none;
+    width: 140px;
+    height: 30px;
+
+    padding: 5px 10px;
+    background-color: #B02121;
+    border-radius: 10px;
+}
+
+#menu-dropdown-login #submenu-login li:hover {
+    background-color: #9A1B1B;
+}
+
+#menu-dropdown-login #submenu-login a {
+    text-decoration: none;
+    padding: 0px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#menu-dropdown-login #submenu-login span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+/* Estilando o Footer das paginas */
+
+h3, h4 {
+    color: #fff;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    gap: 90px;
+}
+
+/* Logo do rodapé */
+.footer #logo_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+.footer #logo_footer img {
+    width: 119px;
+    height: 119px;
+}
+
+.footer span {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* sobre a Melhem */
+.footer #sobre_melhem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #sobre_melhem h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #sobre_melhem span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Localização */
+.footer #localizacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #localizacao h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #localizacao span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Contattos */
+.footer #contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #contatos h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer #contatos h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer #contatos span {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Segue a gente */
+.footer #segue_gente {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer #segue_gente h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
